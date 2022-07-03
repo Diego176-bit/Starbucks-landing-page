@@ -1,0 +1,248 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+main{
+    
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.menu{
+    display: none;
+}
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.header__nav a img{
+    margin: 10px 100px;
+    max-width: 50%;
+}
+.header__nav-ul li{
+    display: inline-block;
+    margin: 40px 50px 0 0;
+}
+.header__nav-ul li a{
+    color: #191919;
+    text-decoration: none;
+}
+
+
+.main__div-content{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main__div-content-text{
+    position: relative;
+    
+    max-width: 600px;
+}
+.main__div-content-text h2{
+    font-size: 50px;
+}
+.main__div-content h2 span{
+    color: #017143;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.main__div-content-text a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #017143;
+    padding: 10px 20px;
+    border-radius: 15px;
+    position: relative;
+    top: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.starbucks-juice{
+
+    max-width: 300px;
+    filter: drop-shadow(3px 3px 5px #000);
+}
+
+.main__ul-thumb{
+    position: absolute;
+    left:50%;
+    bottom: 30px;
+    transform: translate(-50%);
+    display: flex;
+    
+}
+
+.main__ul-thumb li{
+    
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.main__ul-thumb li:hover{
+    transform: translateY(-15px) ;
+}
+.main__ul-thumb img{
+    max-width: 60px;
+    
+    
+}
+.main__ul-social-media{
+    position: relative;
+    display: inline-block;
+    left: 95%;
+    top: -300px;
+}
+.main__ul-social-media li{
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.main__ul-social-media li img{
+    transform: scale(0.5);
+    filter: invert(1);
+}
+.main__ul-social-media li:first-child{
+    padding: 0 7px;
+}
+.circle{
+    
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(600px at right 750px);
+    background-color: #017143;
+}
+
+@media (max-width: 991px){
+    
+    
+    section{
+        
+        padding: 20px 20px 120px;
+        min-width: 300px;
+        
+    }
+    main{
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    .menu{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url(../img/menu.png);
+        background-size: 30px;
+        background-repeat:no-repeat;
+        background-position: center;
+        filter: invert(1);
+        cursor: pointer;
+
+    }
+    .menu.active{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url(../img/close.png);
+        background-size: 20px;
+        background-repeat:no-repeat;
+        background-position: center;
+        filter: invert(1);
+        cursor: pointer;
+        z-index: 20;
+    }
+    .menu i{
+        font-size: 30px;
+    }
+    .header__nav{
+        padding: 20px;
+
+    }
+    .header__nav a{
+        min-width: 60px;
+    }
+    .header__nav a img{
+        margin: 0;
+        max-width: 60px;
+        
+    }
+
+    .header__nav-ul{
+        display: none;
+    }
+    .main__div-content{
+        padding: 20px;
+
+    }
+    
+    .main__div-content{
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+    .main__div-content-text h2{
+        font-size: 2.5em;
+        
+    }
+    .main__div-img{
+        padding: 0px 0 0px 184px;
+        min-width: 500px;
+    }
+    .starbucks-juice{
+        width: 100%;
+        
+    }
+    .main__ul-thumb{
+        bottom: -200px;
+    }
+    
+    
+    .circle{
+        top: 200px;
+        clip-path: circle(350px at center bottom);
+    }
+    .menu-ul-responsive{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        list-style: none;
+    }
+    .menu-ul-responsive li a{
+        color: #000;
+        text-decoration: none;
+    }
+    .menu-ul-responsive li{
+        position: relative;
+        top: 35%;
+        margin: 10px auto;
+    }
+
+    
+}
